@@ -144,6 +144,7 @@ form .fine-print { margin: 16px 0 0; font-size: 15px; }
 footer { padding: 36px 0; border-top: 1px solid var(--line); }
 .footer-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; }
 .footer-inner p { margin: 0; color: #c4ccd8; font-size: 14px; line-height: 1.9; }
+.footer-version { font-size: 12px; }
 .footer-inner > a:last-child { display: inline-flex; align-items: center; min-height: 48px; margin-left: auto; font-size: 15px; }
 .skip { position: fixed; top: -120px; left: 20px; z-index: 30; padding: 12px; background: var(--red-deep); }
 .skip:focus { top: 12px; }
