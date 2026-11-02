@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101113">
+  <meta http-equiv="Content-Security-Policy" content="connect-src 'none'; form-action 'none'; object-src 'none'; base-uri 'none'">
+  <meta name="description" content="Демонстрационный сайт вымышленного московского автосервиса АвтоПрофи.">
+  <title>АвтоПрофи — автосервис в Москве · Демо</title>
+  <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+  <header><div class="container header-inner">
+    <a class="logo" href="#home">АВТО<span>ПРОФИ</span><small>МОСКВА / ДЕМО</small></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Открыть меню" type="button">☰</button>
+    <nav id="navigation" aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#prices">Цены</a><a href="#advantages">Преимущества</a><a href="#steps">Как работаем</a><a href="#contacts">Контакты</a><a class="nav-book" href="#booking">Записаться · демо ↗</a></nav>
+    <a class="header-book" href="#booking">Записаться <span aria-hidden="true">↗</span></a>
+  </div></header>
+  <main id="main" tabindex="-1">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="hero-location">АВТОСЕРВИС В МОСКВЕ</span><span class="badge">ДЕМО-ПРОЕКТ</span></p>
+          <h1 id="hero-title">АвтоПрофи.<br>Ваш автомобиль.<br><span>Наша точность.</span></h1>
+          <p class="intro">От планового ТО до сложного ремонта.<br>Понятные цены и никакой суеты — только результат.</p>
+          <div class="hero-actions">
+            <a class="button" href="#booking">Записаться <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#services">Наши услуги <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-values">
+            <div class="hero-value">
+              <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false"><path d="m20 6-5 5 6 6 5-5a9 9 0 0 1-11 11l-7 7a3 3 0 0 1-4-4l7-7A9 9 0 0 1 20 6Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Диагностика<br>перед ремонтом</span>
+            </div>
+            <div class="hero-value">
+              <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false"><path d="M7 3h13l6 6v20H7V3Z M19 3v8h7 M12 16h9 M12 22h9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Прозрачная<br>смета</span>
+            </div>
+            <div class="hero-value">
+              <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false"><path d="m16 3 11 5v8c0 6-5 10-11 13C10 26 5 22 5 16V8l11-5Z M12 16l3 3 6-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Внимание<br>к деталям</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img class="hero-photo" src="assets/images/mercedes-cutout.png" alt="" width="1672" height="941" fetchpriority="high" decoding="async">
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>ТЕХНИКА ЛЮБИТ ТОЧНОСТЬ</span><a href="#services">Листайте вниз ↓</a></div>
+    </section>
+    <div class="strip"><span>ДИАГНОСТИКА</span><b aria-hidden="true">+</b><span>ОБСЛУЖИВАНИЕ</span><b aria-hidden="true">+</b><span>РЕМОНТ</span></div>
+    <section class="container section" id="services"><div class="section-heading"><div><p class="eyebrow">01 / УСЛУГИ</p><h2>Всё, что нужно<br>вашему автомобилю.</h2></div><p>Разбираемся в причинах. Находим решение.<br>Возвращаем в движение.</p></div>
+      <div class="services-grid">
+        <a class="service-card" href="#booking" data-service="Диагностика"><div class="card-top"><span>⌁</span>01</div><h3>Диагностика</h3><p>Проверка электронных систем и поиск причин неисправностей.</p><span class="card-link">Выбрать услугу ↗</span></a>
+        <a class="service-card" href="#booking" data-service="Техническое обслуживание"><div class="card-top"><span>⚙</span>02</div><h3>Техническое обслуживание</h3><p>Замена масла, фильтров и расходников по регламенту.</p><span class="card-link">Выбрать услугу ↗</span></a>
+        <a class="service-card" href="#booking" data-service="Тормозная система"><div class="card-top"><span>◎</span>03</div><h3>Тормозная система</h3><p>Обслуживание дисков, колодок и тормозной жидкости.</p><span class="card-link">Выбрать услугу ↗</span></a>
+        <a class="service-card" href="#booking" data-service="Подвеска и рулевое"><div class="card-top"><span>↔</span>04</div><h3>Подвеска и рулевое</h3><p>Проверка ходовой части, устранение стуков и вибраций.</p><span class="card-link">Выбрать услугу ↗</span></a>
+        <a class="service-card" href="#booking" data-service="Автоэлектрика"><div class="card-top"><span>ϟ</span>05</div><h3>Автоэлектрика</h3><p>Диагностика проводки, аккумулятора и электрооборудования.</p><span class="card-link">Выбрать услугу ↗</span></a>
+        <a class="service-card accent-card" href="#booking" data-service="Нужна консультация"><div class="card-top"><span>↗</span>06</div><h3>Не знаете,<br>с чего начать?</h3><p>Попробуйте записаться на консультацию в демо-форме.</p><span class="card-link">Записаться ↗</span></a>
+      </div></section>
+    <section class="surface" id="prices"><div class="container section"><div class="section-heading"><div><p class="eyebrow">02 / ЦЕНЫ</p><h2>Понятно с первого взгляда.</h2></div><span class="badge">ДЕМОНСТРАЦИОННЫЕ ЦЕНЫ</span></div><table><caption class="sr-only">Примеры стоимости работ без запчастей</caption><thead><tr><th scope="col">УСЛУГА</th><th scope="col">СТОИМОСТЬ РАБОТ</th></tr></thead><tbody><tr><td>Компьютерная диагностика</td><td>от 1 500 ₽</td></tr><tr><td>Замена масла и масляного фильтра</td><td>от 1 200 ₽</td></tr><tr><td>Замена тормозных колодок · одна ось</td><td>от 2 000 ₽</td></tr><tr><td>Диагностика подвески</td><td>от 1 000 ₽</td></tr><tr><td>Диагностика электрооборудования</td><td>от 1 800 ₽</td></tr></tbody></table><p class="fine-print">Все цены вымышлены и приведены для демонстрации. Запчасти и расходные материалы не включены. Это не предложение реальных услуг.</p></div></section>
+    <section class="container section" id="advantages"><div class="section-heading"><div><p class="eyebrow">03 / ПРЕИМУЩЕСТВА</p><h2>Доверие складывается<br>из деталей.</h2></div><p>Так мы представляем хороший сервис.</p></div><div class="advantages-grid"><article><span class="number">01 /</span><h3>Прозрачная смета</h3><p>Объясняем состав работ и согласовываем стоимость до начала ремонта.</p></article><article><span class="number">02 /</span><h3>Внимание к причине</h3><p>Сначала диагностика, затем решение. Каждая замена должна быть обоснована.</p></article><article><span class="number">03 /</span><h3>На связи с вами</h3><p>Понятно рассказываем о состоянии автомобиля и ходе обслуживания.</p></article><article><span class="number">04 /</span><h3>Контроль результата</h3><p>Проверяем выполненные работы и даём рекомендации по эксплуатации.</p></article></div></section>
+    <section class="surface" id="steps"><div class="container section"><p class="eyebrow">04 / ЭТАПЫ РАБОТЫ</p><h2>От заявки до новой поездки.</h2><ol class="steps"><li><span>01</span><h3>Запись</h3><p>Выбираете услугу и оставляете заявку.</p></li><li><span>02</span><h3>Диагностика</h3><p>Проверяем автомобиль и определяем объём работ.</p></li><li><span>03</span><h3>Согласование</h3><p>Обсуждаем смету, детали и сроки.</p></li><li><span>04</span><h3>Результат</h3><p>Выполняем работы и проверяем автомобиль.</p></li></ol><p class="fine-print">Пример процесса вымышленного сервиса. Здесь доступна только демонстрационная запись.</p></div></section>
+    <section class="container section contacts" id="contacts"><div><p class="eyebrow">05 / КОНТАКТЫ</p><h2>Начнём<br>с вашего авто.</h2><p class="contact-intro">Демонстрационные контакты вымышленного автосервиса. Не предназначены для связи или посещения.</p><dl><div><dt>АДРЕС · ДЕМО</dt><dd>Москва, ул. Примерная, д. 10<br><small>Вымышленный адрес</small></dd></div><div><dt>ТЕЛЕФОН · ДЕМО</dt><dd>+7 (XXX) XXX-XX-XX</dd></div><div><dt>ПОЧТА · ДЕМО</dt><dd>service@autoprofi.example</dd></div><div><dt>ГРАФИК · ДЕМО</dt><dd>Ежедневно, 09:00–21:00</dd></div></dl><p class="fine-print">● Учебный проект. Реальные услуги не оказываются.</p></div>
+      <div class="booking-panel" id="booking" tabindex="-1">
+        <span class="badge">ДЕМО · БЕЗ ОТПРАВКИ ДАННЫХ</span>
+        <h3 id="booking-heading">Запись на сервис</h3>
+        <p id="booking-description">Попробуйте форму с вымышленными данными. Заявка никуда не отправляется и не сохраняется.</p>
+        <form id="booking-form" aria-labelledby="booking-heading" aria-describedby="booking-description booking-note" autocomplete="off">
+          <label for="customer">Имя для примера</label>
+          <input id="customer" type="text" placeholder="Например, Демо-посетитель" maxlength="80" autocomplete="off" aria-describedby="booking-note" required>
+          <label for="car-model">Автомобиль для примера</label>
+          <input id="car-model" type="text" placeholder="Например, Демоавто, 2020" maxlength="100" autocomplete="off" aria-describedby="booking-note" required>
+          <label for="service">Выберите услугу</label>
+          <select id="service" required>
+            <option value="">Выберите из списка</option><option>Диагностика</option><option>Техническое обслуживание</option><option>Тормозная система</option><option>Подвеска и рулевое</option><option>Автоэлектрика</option><option>Нужна консультация</option>
+          </select>
+          <button class="button" id="submit-booking" type="submit" disabled>Попробовать запись <span aria-hidden="true">↗</span></button>
+          <p class="fine-print" id="booking-note">Демонстрационный режим: реальная запись не создаётся. Не вводите персональные данные.</p>
+          <noscript><p>Для демонстрационной записи включите JavaScript.</p></noscript>
+          <div id="form-result" class="form-result" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-inner"><a class="logo" href="#home">АВТО<span>ПРОФИ</span></a><p>© 2026 АвтоПрофи · Вымышленный автосервис<br>Демонстрационный сайт. Все цены и контакты — примеры.</p><a href="#home">Наверх ↑</a></div></footer>
+</body>
+</html>
+
+
+
+
+
