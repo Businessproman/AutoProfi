@@ -25,3 +25,8 @@ Thumbs.db
 credentials.json
 secrets.json
 .npmrc
+
+# Local publication copy and visual references
+/publish/
+/design-reference.png
+/Снимок экрана 2026-10-22 201524.png
