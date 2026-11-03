@@ -282,33 +282,33 @@ footer { padding: 36px 0; border-top: 1px solid var(--line); }
 .hero .hero-value:last-child { padding-right: 0; border-right: 0; }
 .hero .hero-value svg { width: 27px; height: 29px; flex: 0 0 auto; margin-top: 2px; color: var(--hero-red); }
 .hero .hero-value span { padding: 0; border: 0; color: #d3d3d9; font-size: 15px; line-height: 1.6; }
-/* У текущей PNG узкие прозрачные поля: держим кузов в 16px от края экрана.
-   Масштаб и высота оставляют не менее 40px до текста и кнопок. */
-.hero .hero-art { position: absolute; width: calc(70vw - 180px); max-width: 1164px; height: auto; aspect-ratio: 1672 / 941; right: calc((100% - min(100vw, 1920px)) / 2 + 16px); transform: translateX(1.615%); top: clamp(130px, calc(530px - 20.833333vw), 200px); margin: 0; border: 0; border-radius: 0; background: none; overflow: visible; pointer-events: none; z-index: 1; }
-.hero .hero-art::after { content: ""; position: absolute; inset: 20% 0 6% 13%; z-index: -2; background: radial-gradient(ellipse closest-side at 60% 44%, #e0093033, #a4092410 60%, transparent 100%); }
+/* Утверждённая композиция B: масштаб и положение сохраняют свободное место у текста.
+   Контактные тени C привязаны к нижним точкам шин нового Mercedes. */
+.hero .hero-art { position: absolute; width: calc(68vw - 180px); max-width: 1125px; height: auto; aspect-ratio: 6688 / 3764; right: calc((100% - min(100vw, 1920px)) / 2 + 16px); transform: translateX(1.615%); top: clamp(145px, calc(545px - 20.833333vw), 215px); margin: 0; border: 0; border-radius: 0; background: none; overflow: visible; pointer-events: none; z-index: 1; }
+.hero .hero-art::after { content: ""; position: absolute; inset: 20% 0 6% 13%; z-index: -2; opacity: .65; background: radial-gradient(ellipse closest-side at 60% 44%, #e0093033, #a4092410 60%, transparent 100%); }
 .hero .hero-art::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 67%;
+  top: 0;
   width: 100%;
-  height: 42%;
+  height: 100%;
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 12% 7% at 51% 54%, #000f 15%, #000c 52%, transparent 100%),
-    radial-gradient(ellipse 10% 6% at 91% 31%, #000f 15%, #000c 52%, transparent 100%),
-    radial-gradient(ellipse 54% 21% at 66% 56%, #30212677, #09060988 58%, transparent 100%),
-    radial-gradient(ellipse 53% 12% at 65% 65%, #d7334733, #9c26301a 52%, transparent 100%);
-  filter: blur(5px);
+    radial-gradient(ellipse 9% 1.5% at 50% 88.8%, #000f 25%, #000b 60%, transparent 100%),
+    radial-gradient(ellipse 6% 1.2% at 89.6% 79.8%, #000f 25%, #000b 60%, transparent 100%),
+    radial-gradient(ellipse 38% 7% at 60% 86%, #010102cf 20%, #04020465 65%, transparent 100%),
+    radial-gradient(ellipse 40% 10% at 58% 89%, #64303a40 10%, #2b171e26 55%, transparent 100%);
 }
-.hero .hero-photo { display: block; position: static; width: 100%; height: auto; object-fit: contain; object-position: center; }
+.hero .hero-art picture { display: block; }
+.hero .hero-photo { display: block; position: static; width: 100%; height: auto; aspect-ratio: 6688 / 3764; object-fit: contain; object-position: center; }
 .hero .hero-bottom { position: relative; z-index: 3; margin-top: 0; padding: 0 0 12px; font-size: 13px; letter-spacing: .6px; }
 .hero .hero-bottom a { min-height: 44px; }
 
 @media (max-width: 1439px) {
   .hero .intro { max-width: 400px; }
-  .hero .hero-art { top: 190px; }
+  .hero .hero-art { top: 215px; }
   .hero .button { width: 240px; }
   .hero .hero-actions { gap: 24px; }
 }
@@ -348,7 +348,8 @@ footer { padding: 36px 0; border-top: 1px solid var(--line); }
   .hero .hero-value { flex-direction: column; gap: 8px; padding-inline: 13px; }
   .hero .hero-value svg { width: 25px; height: 27px; }
   .hero .hero-value span { font-size: 13px; line-height: 1.6; }
-  .hero .hero-art { width: 104%; margin: 8px 0 0 -2%; }
+  /* Прозрачное верхнее поле позволяет поднять авто, сохраняя положение текста. */
+  .hero .hero-art { width: 104%; margin: -16px 0 0 -2%; }
   .hero .hero-bottom { padding-top: 0; font-size: 12px; gap: 8px 16px; }
 }
 
